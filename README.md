@@ -127,7 +127,31 @@ Adds 50 µL of 20:80 water/methanol reconstitution solvent to the dried-down ext
 
 ## Custom Labware
 
-The Abgene 2.2 mL plate, Matrix tube rack, and Agilent EMR plates require custom labware definitions that are not included in the default Opentrons labware library. Custom definitions must be uploaded to the Opentrons App before running these protocols. Contact the authors or generate definitions using the [Opentrons Labware Creator](https://labware.opentrons.com/create/).
+The Abgene 2.2 mL plate, Matrix tube rack, and Agilent collection plate require custom labware definitions that are not included in the default Opentrons labware library. These definitions are provided in the `labware/` directory:
+
+| File | Labware | Used In |
+|------|---------|---------|
+| `abgene_96_wellplate_2200ul.json` | Abgene 96 deep-well plate, 2.2 mL | Steps 1, 2, 3 |
+| `agilent_collectionplate_96wellplate_1000ul.json` | Agilent EMR collection plate, 1 mL | Step 2 |
+| `matrix96well_96_tuberack_500ul.json` | Matrix 96-well tube rack, 500 µL | Step 1 |
+
+Upload these JSON files to the Opentrons App before running the protocols.
+
+## Repository Structure
+
+```
+Milk-PFAS-Opentrons-Protocols/
+├── protocols/
+│   ├── step1_sample_aliquoting_and_solvent_addition.py
+│   ├── step2_conditioning_and_supernatant_loading.py
+│   └── step3_extract_reconstitution.py
+├── labware/
+│   ├── abgene_96_wellplate_2200ul.json
+│   ├── agilent_collectionplate_96wellplate_1000ul.json
+│   └── matrix96well_96_tuberack_500ul.json
+├── docs/
+└── README.md
+```
 
 ## Usage
 
