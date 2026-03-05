@@ -66,17 +66,17 @@ Conditions the Agilent EMR-PFAS Food II plate with two 500 µL solvent washes, l
 | A1 | NEST 195 mL reservoir (1% NH₄OH in ACN) |
 | A2 | NEST 195 mL reservoir (conditioning solvent) |
 | A3 | 1000 µL tip rack (conditioning solvent) |
-| B1 | Agilent EMR collection plate (conditioning waste) |
+| B1 | Agilent EMR plate + Abgene collection plate (conditioning waste) |
 | B3 | 1000 µL tip rack (supernatant transfer) |
-| C1 | Agilent EMR collection plate (sample eluate) |
+| C1 | Agilent EMR plate + Abgene collection plate (sample eluate) |
 | C2 | Abgene 2.2 mL plate (centrifuged supernatant from Step 1) |
 | C3 | 50 µL filter tip rack (NH₄OH) |
 | D2 | Abgene 2.2 mL plate (final collection) |
 
 **Manual interventions (protocol pauses):**
 1. Allow conditioning wash solvent to gravity-elute before second wash
-2. Allow second wash to gravity-elute before sample loading
-3. After sample loading: gravity-elute, apply positive pressure, then add NH₄OH to reservoir A1
+2. Allow second wash to gravity-elute and move EMR plate to slot C1 before sample loading
+3. After sample loading: gravity-elute, apply positive pressure, move collection plate to slot D2, then add NH₄OH to reservoir A1
 
 ### Step 3: Extract Reconstitution
 
@@ -107,14 +107,13 @@ Adds 50 µL of 20:80 water/methanol reconstitution solvent to the dried-down ext
 
 | Item | Part Number | Used In |
 |------|-------------|---------|
-| Opentrons Flex 96 tip rack, 1000 µL | — | Steps 1, 2 |
-| Opentrons Flex 96 filter tip rack, 200 µL | — | Step 3 |
-| Opentrons Flex 96 filter tip rack, 50 µL | — | Step 2 |
-| Matrix 96-well tube rack, 500 µL | — | Step 1 |
-| Abgene 96 deep-well plate, 2.2 mL | — | Steps 1, 2, 3 |
-| Agilent EMR-PFAS Food II 96-well plate | — | Step 2 |
-| Agilent EMR collection plate, 1 mL | — | Step 2 |
-| NEST 1-well reservoir, 195 mL | — | Steps 1, 2, 3 |
+| Opentrons Flex 96 filter tip rack, 1000 µL | 991-00106 | Steps 1, 2 |
+| Opentrons Flex 96 filter tip rack, 200 µL | 991-00105 | Step 3 |
+| Opentrons Flex 96 filter tip rack, 50 µL | 991-00104 | Step 2 |
+| Matrix 96-well tube rack, 500 µL | 3744-WP1D-BR | Step 1 |
+| Abgene 96 deep-well plate, 2.2 mL | AB0932 | Steps 1, 2, 3 |
+| Agilent EMR-PFAS Food II 96-well plate | 5982-0026 | Step 2 |
+| NEST 1-well reservoir, 195 mL | 999-00078 | Steps 1, 2, 3 |
 
 ### Reagents
 
@@ -127,12 +126,12 @@ Adds 50 µL of 20:80 water/methanol reconstitution solvent to the dried-down ext
 
 ## Custom Labware
 
-The Abgene 2.2 mL plate, Matrix tube rack, and Agilent collection plate require custom labware definitions that are not included in the default Opentrons labware library. These definitions are provided in the `labware/` directory:
+The Abgene 2.2 mL plate, Matrix tube rack, and Agilent EMR plate + Abgene collection plate require custom labware definitions that are not included in the default Opentrons labware library. These definitions are provided in the `labware/` directory:
 
 | File | Labware | Used In |
 |------|---------|---------|
 | `abgene_96_wellplate_2200ul.json` | Abgene 96 deep-well plate, 2.2 mL | Steps 1, 2, 3 |
-| `agilent_collectionplate_96wellplate_1000ul.json` | Agilent EMR collection plate, 1 mL | Step 2 |
+| `agilent_collectionplate_96wellplate_1000ul.json` | Agilent EMR plate, 1 mL on top of Abgene collection plate, 2.2 mL | Step 2 |
 | `matrix96well_96_tuberack_500ul.json` | Matrix 96-well tube rack, 500 µL | Step 1 |
 
 Upload these JSON files to the Opentrons App before running the protocols.
