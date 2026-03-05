@@ -182,9 +182,9 @@ If you use these protocols, please cite:
 
 ## Authors
 
-Aryan Patel and Catherine Mullins
-Comprehensive Laboratory for Untargeted Exposome Science (CLUES)
-Gangarosa Department of Environmental Health
+Aryan Patel and Catherine Mullins  
+Comprehensive Laboratory for Untargeted Exposome Science (CLUES)  
+Gangarosa Department of Environmental Health  
 Rollins School of Public Health, Emory University
 
 ## License
