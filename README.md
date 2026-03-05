@@ -1,4 +1,4 @@
-# Automated PFAS Extraction from Human Milk
+# Opentrons Flex Protocol for PFAS Extraction from Human Milk
 
 Opentrons Flex protocols for high-throughput PFAS extraction from human milk using 96-well Enhanced Matrix Removal (EMR) cleanup. These protocols automate the sample preparation workflow described in:
 
