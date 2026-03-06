@@ -7,7 +7,7 @@ Python-based Opentrons Flex protocols and labware definitons for high-throughput
 
 ## Overview
 
-This repository contains three Python protocols for the Opentrons Flex liquid handler that together automate the extraction of 23 PFAS from 300 µL of human milk. The workflow processes a full 96-well plate (72 samples + 24 QA/QC materials) in approximately 4 hours of preparation time, with minimal manual intervention.
+This repository contains three Python protocols for the Opentrons Flex liquid handler that together automate the extraction of 23 PFAS from 300 µL of human milk. The workflow processes a full 96-well plate (72 samples + 24 QA/QC materials) in approximately 3 hours of preparation time, with minimal manual intervention.
 
 The protocols use the Opentrons Flex 96-channel 1000 µL pipette, which operates on all 96 wells simultaneously.
 
