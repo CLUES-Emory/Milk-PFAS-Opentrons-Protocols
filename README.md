@@ -18,7 +18,7 @@ The protocols use the Opentrons Flex 96-channel 1000 µL pipette, which operates
 | 1 | `step1_sample_aliquoting_and_solvent_addition.py` | Aliquot 300 µL milk + add 1200 µL extraction solvent | ~5 min |
 | 2 | — | **Off-robot:** Vortex 10 min, centrifuge 15 min at 3,940 × g, 4°C | ~30 min |
 | 3 | `step2_conditioning_and_supernatant_loading.py` | EMR plate conditioning, supernatant loading, NH₄OH addition | ~10 min |
-| 4 | — | **Off-robot:** Positive pressure elution, evaporative dry-down (N₂, 50°C, ~2 hr) | ~2 hr |
+| 4 | — | **Off-robot:** Positive pressure elution, evaporative dry-down (N₂, 50°C, ~1 hr) | ~1 hr |
 | 5 | `step3_extract_reconstitution.py` | Reconstitute dried extract in 50 µL 20:80 water/methanol | ~5 min |
 | 6 | — | **Off-robot:** Vortex 5 min, sonicate 5 min, centrifuge 3 min | ~15 min |
 
@@ -112,7 +112,7 @@ Adds 50 µL of 20:80 water/methanol reconstitution solvent to the dried-down ext
 | Opentrons Flex 96 filter tip rack, 50 µL | 991-00104 | Step 2 |
 | Matrix 96-well tube rack, 500 µL | 3744-WP1D-BR | Step 1 |
 | Abgene 96 deep-well plate, 2.2 mL | AB0932 | Steps 1, 2, 3 |
-| Agilent EMR-PFAS Food II 96-well plate | 5982-0026 | Step 2 |
+| Agilent EMR-PFAS Food II 96-well plate | custom-made | Step 2 |
 | NEST 1-well reservoir, 195 mL | 999-00078 | Steps 1, 2, 3 |
 
 ### Reagents
