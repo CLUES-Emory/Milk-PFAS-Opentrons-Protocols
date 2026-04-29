@@ -2,12 +2,12 @@
 
 Python-based Opentrons Flex protocols and labware definitons for high-throughput PFAS extraction from human milk using 96-well Enhanced Matrix Removal (EMR) cleanup. These protocols automate the sample preparation workflow described in:
 
-> **A Scalable Method for Quantitation of Trace-Level Per-and Polyfluoroalkyl Substances (PFAS) in Human Milk**
+> **A Scalable Method for Quantitation of Per-and Polyfluoroalkyl Substances (PFAS) in Human Milk**
 > [Author list and journal citation to be added upon publication]
 
 ## Overview
 
-This repository contains three Python protocols for the Opentrons Flex liquid handler that together automate the extraction of 23 PFAS from 300 µL of human milk. The workflow processes a full 96-well plate (72 samples + 24 QA/QC materials) in approximately 3 hours of preparation time, with minimal manual intervention.
+This repository contains three Python protocols for the Opentrons Flex liquid handler that together automate the extraction of 23 PFAS from 300 µL of human milk. The workflow processes a full 96-well plate (72 samples + 24 QC materials) in approximately 2 hours of preparation time, with minimal manual intervention.
 
 The protocols use the Opentrons Flex 96-channel 1000 µL pipette, which operates on all 96 wells simultaneously.
 
@@ -166,7 +166,7 @@ Flow rates and volumes are defined as named variables at the top of each protoco
 | Parameter | Default | Protocol |
 |-----------|---------|----------|
 | Sample volume | 300 µL | Step 1 |
-| Extraction solvent volume | 1200 µL | Step 1 |
+| Extraction solvent volume | 2 x 600 µL | Step 1 |
 | Conditioning solvent volume | 2 × 500 µL | Step 2 |
 | Equilibration volume | 150 µL | Step 2 |
 | Supernatant loading volume | 2 × 500 µL | Step 2 |
