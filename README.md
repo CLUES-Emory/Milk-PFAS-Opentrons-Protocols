@@ -7,7 +7,7 @@ Python-based Opentrons Flex protocols and labware definitons for high-throughput
 
 ## Overview
 
-This repository contains three Python protocols for the Opentrons Flex liquid handler that together automate the extraction of 23 PFAS from 300 µL of human milk. The workflow processes a full 96-well plate (72 samples + 24 QC materials) in approximately 2 hours of preparation time, with minimal manual intervention.
+This repository contains three protocols for the Opentrons Flex liquid handler that together automate the extraction of 23 PFAS from 300 µL of human milk. The workflow processes a full 96-well plate (72 samples + 24 QC materials) in approximately 3 hours of preparation time, with minimal manual intervention.
 
 The protocols use the Opentrons Flex 96-channel 1000 µL pipette, which operates on all 96 wells simultaneously.
 
@@ -18,7 +18,7 @@ The protocols use the Opentrons Flex 96-channel 1000 µL pipette, which operates
 | 1 | `step1_sample_aliquoting_and_solvent_addition.py` | Aliquot 300 µL milk + add 1200 µL extraction solvent | ~5 min |
 | 2 | — | **Off-robot:** Vortex 10 min, centrifuge 15 min at 3,940 × g, 4°C | ~30 min |
 | 3 | `step2_conditioning_and_supernatant_loading.py` | EMR plate conditioning, supernatant loading, NH₄OH addition | ~10 min |
-| 4 | — | **Off-robot:** Positive pressure elution, evaporative dry-down (N₂, 50°C, ~1 hr) | ~1 hr |
+| 4 | — | **Off-robot:** Positive pressure elution, evaporative dry-down (N₂, 50°C, ~2 hr) | ~2 hr |
 | 5 | `step3_extract_reconstitution.py` | Reconstitute dried extract in 50 µL 20:80 water/methanol | ~5 min |
 | 6 | — | **Off-robot:** Vortex 5 min, sonicate 5 min, centrifuge 3 min | ~15 min |
 
