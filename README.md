@@ -149,9 +149,9 @@ Milk-PFAS-Opentrons-Protocols/
 │   ├── agilent_collectionplate_96wellplate_1000ul.json
 │   └── matrix96well_96_tuberack_500ul.json
 ├── docs/
-|   ├── protocol1
-│   ├── protocol2
-│   └── protocol3
+|   ├── step1_deck_layout
+│   ├── step2_deck_layout
+│   └── step3_deck_layout
 └── README.md
 ```
 
