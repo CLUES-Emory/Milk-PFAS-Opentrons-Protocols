@@ -179,7 +179,7 @@ Flow rates and volumes are defined as named variables at the top of each protoco
 
 If you use these protocols, please cite:
 
-> [Citation to be added upon publication]
+> Patel AD, Mullins CE, Zhao L, Chatzi L, Alderete TL, Walker DI. 2026. **A Scalable Method for Quantitation of Per-and Polyfluoroalkyl Substances (PFAS) in Human Milk.** _Analytical Chemistry._ https://pubs.acs.org/ancham/article/doi/10.1021/acs.analchem.6c03698/5468889/A-Scalable-Method-for-Quantitation-of-Per-and
 
 ## Authors
 
