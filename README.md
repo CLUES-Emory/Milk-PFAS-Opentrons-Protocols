@@ -2,7 +2,7 @@
 
 Python-based Opentrons Flex protocols and labware definitons for high-throughput PFAS extraction from human milk using 96-well Enhanced Matrix Removal (EMR) cleanup. These protocols automate the sample preparation workflow described in:
 
-> Patel AD, Mullins CE, Zhao L, Chatzi L, Alderete TL, Walker DI. 2026. **A Scalable Method for Quantitation of Per-and Polyfluoroalkyl Substances (PFAS) in Human Milk** _Analytical Chemistry._ https://pubs.acs.org/ancham/article/doi/10.1021/acs.analchem.6c03698/5468889/A-Scalable-Method-for-Quantitation-of-Per-and
+> Patel AD, Mullins CE, Zhao L, Chatzi L, Alderete TL, Walker DI. 2026. **A Scalable Method for Quantitation of Per-and Polyfluoroalkyl Substances (PFAS) in Human Milk.** _Analytical Chemistry._ https://pubs.acs.org/ancham/article/doi/10.1021/acs.analchem.6c03698/5468889/A-Scalable-Method-for-Quantitation-of-Per-and
 
 ## Overview
 
